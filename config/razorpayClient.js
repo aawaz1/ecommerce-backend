@@ -3,8 +3,8 @@ import Razorpay from 'razorpay';
 
 
  const razorpay = new Razorpay ({
-    key_id :  "rzp_test_IttNd6rXugN9V",
-    key_secret : "DBLLe9J5rYlKi5cslNT9txbT",
+    key_id : process.env.RAZORPAY_KEY,
+    key_secret : process.env.RAZORPAY_SECRET,
 })
 
-export default Razorpay
+export default Razorpay;
